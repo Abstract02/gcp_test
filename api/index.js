@@ -27,6 +27,6 @@ App.get("/todos", (req, res) => {
    res.send("All is well");
 })
 
-console.log("hell)
+console.log("hell")
 const port = process.env.PORT
 App.listen(port,()=>{console.log(`Server started at ${port}`)})
