@@ -1,0 +1,14 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - '-t'
+      - testcontainer
+      - .
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - '-c'
+      - docker run testcontainer npm run dev
+    entrypoint: bash
+options:
+  logging: CLOUD_LOGGING_ONLY
