@@ -26,6 +26,9 @@ App.use(express.urlencoded({ extended: false }));
 App.get("/todos", (req, res) => {
    res.send("All is good");
 })
+App.get("/todo", (req, res) => {
+   res.send("All is good Well");
+})
 
 console.log("hello world")
 const port = process.env.PORT
