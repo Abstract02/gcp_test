@@ -24,7 +24,7 @@ App.use(express.urlencoded({ extended: false }));
 // const Task = mongoose.model("Task", taskSchema);
 
 App.get("/todos", (req, res) => {
-   res.send("All is good");
+   res.send("All is good for now");
 })
 App.get("/todo", (req, res) => {
    res.send("All is good Well");
